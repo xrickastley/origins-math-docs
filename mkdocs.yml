@@ -1,0 +1,28 @@
+site_name: "Origins: Math Documentation"
+nav:
+  - Home: index.md
+  - General Types:
+    - Power Types: types/power_types.md
+    - Data Types: types/data_types.md
+  - Action Types:
+    - Entity Action Types: types/entity_action_types.md
+  - Condition Types:
+    - Entity Condition Types: types/entity_condition_types.md
+  - Extra Notes:
+    - Resource-backed fields: notes/resource_backed_fields.md
+  - Add-On Guides:
+    - Creating Resource bridges: addon/creating_resource_bridges.md
+
+theme: readthedocs
+markdown_extensions:
+  - toc:
+      separator: "_"
+  - admonition
+plugins:
+  - search
+  - autorefs
+  - alias
+  - categories
+extra_css:
+  - styles/style.css
+  - styles/rtd_dark.css
