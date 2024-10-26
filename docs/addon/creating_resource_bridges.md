@@ -15,7 +15,7 @@ This power's value cannot be changed, as it only serves as an bridge between the
 
 When extending on a `LinkedVariableIntPower`, you must provide an implementation for both the `supplyValue()` and the `supplyDoubleValue()` abstract methods.
 
-The `supplyValue()` method is used when the value of the Resource needs to be obtained. Since Resources are by default: integers, the `supplyValue()` method must return an `int`.
+The `supplyValue()` method is used when the value of the Resource needs to be obtained. Since Resources are by default; integers, the `supplyValue()` method must return an `int`.
 
 On the other hand, the `supplyDoubleValue()` method is used when a more-precise value of the Resource needs to be obtained. This is more commonly used in the `VariableSerializer`, which handles serializing declared variables in both the [Math Resource (Power Type)](../power_types/math_resource.md) and the [Variable Execute Command (Entity Action Type)](../entity_action_types/variable_execute_command.md), as well as the `/resource get absolute` subcommand.
 
@@ -25,7 +25,7 @@ A `SuppliedLinkedVariableIntPower` is an abstract extension of the `LinkedVariab
 
 The type `T` would be the object that the given `Supplier` would be supplying for the `Consumer` to consume. It'll make more sense when I give an example, so hang on tight in there!
 
-Say we have a bunch of properties of a `PlayerEntity` that we would want to get, such as their hunger, saturation, relative health, breathing, how long they've been on fire, etc. We could use an `if-else` to check for each property the power would want, but that would also be harder to read the more properties you want to have. This is where the `SuppliedLinkedVariableIntPower` comes into play.
+Say we have a bunch of properties of a `PlayerEntity` that we would want to get, such as their hunger, saturation, relative health, breathing, how long they've been on fire, etc. We could use an `if-else` to check for each property the power would want, but that would be harder to read the more properties you want to have. This is where the `SuppliedLinkedVariableIntPower` comes into play.
 
 First of all, we need to declare an `enum` that implements the `InstanceValueSupplier<T>` interface. This allows the enum values to be used in supplying the value for a specific property.
 
