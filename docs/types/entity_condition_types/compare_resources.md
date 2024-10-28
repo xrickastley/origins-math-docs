@@ -1,10 +1,10 @@
-# Resource
+# Compare Resources
 
 [Entity Condition Type](../entity_condition_types.md)
 
-Compares the value of a power that uses the Resource (Power Type) or a power type that has a built-in cooldown (using remaining ticks as the value) with another power.
+Compares the value of a power that uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or a power type that has a built-in cooldown (using remaining ticks as the value) with another power.
 
-Type ID: `origins-math:compare_resource`
+Type ID: `origins-math:compare_resources`
 
 ### Fields
 | Field			| Type		| Default		| Description								|
