@@ -13,7 +13,7 @@ Type ID: `origins-math:variable_change_resource`
 !!! warning 
 	Some Resource values in this mod can be internally stored as a [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/), but normal Origin Resource powers have to be stored as an [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/).
 	
-	In this [Entity Action Type](../entity_action_types.md), the resulting value of `expression` is [floored](https://en.wikipedia.org/wiki/Floor_and_ceiling_functions) since it will be added to/set as the value of the target resource. However, all Resource values that are used in `expression` have their values unchanged.
+	In this [Entity Action Type](../entity_action_types.md), the resulting value of `expression` will have it's decimal counterpart removed, effectively being [truncated](https://en.wikipedia.org/wiki/Truncation) since it will be added to/set as the value of the target resource. However, all Resource values that are used in `expression` have their original values unchanged.
 
 ### Fields
 | Field			| Type		| Default		| Description								|
@@ -34,4 +34,4 @@ Type ID: `origins-math:variable_change_resource`
 	}
 }
 ```
-The example above will add the floored value of the expression `"sqrt(my_variable / 2)"` to the `origins-math:my_resource` Resource, with `my_variable` corresponding to the `origins-math:my_other_resource` Resource.
+The example above will add the truncated value of the expression `"sqrt(my_variable / 2)"` to the `origins-math:my_resource` Resource, with `my_variable` corresponding to the `origins-math:my_other_resource` Resource.
