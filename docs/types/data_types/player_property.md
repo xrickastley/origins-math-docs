@@ -27,4 +27,4 @@ A [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) us
 | `VELOCITY_Z`      | The player's current Z velocity.                                      |
 | `PITCH`           | The player's current pitch.                                           |
 | `YAW`             | The player's current yaw.                                             |
-| `ROLL`            | The player's current roll.                                            m|
+| `ROLL`            | The player's current roll.                                            |
