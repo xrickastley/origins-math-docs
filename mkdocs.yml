@@ -27,4 +27,3 @@ plugins:
   - categories
 extra_css:
   - styles/style.css
-  - styles/rtd_dark.css
