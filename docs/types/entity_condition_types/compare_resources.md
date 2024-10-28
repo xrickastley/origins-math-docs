@@ -1,6 +1,6 @@
 # Resource
 
-[Entity Condition Type](../types/entity_condition_types.md)
+[Entity Condition Type](../entity_condition_types.md)
 
 Compares the value of a power that uses the Resource (Power Type) or a power type that has a built-in cooldown (using remaining ticks as the value) with another power.
 

@@ -17,7 +17,7 @@ When extending on a `LinkedVariableIntPower`, you must provide an implementation
 
 The `supplyValue()` method is used when the value of the Resource needs to be obtained. Since Resources are by default; integers, the `supplyValue()` method must return an `int`.
 
-On the other hand, the `supplyDoubleValue()` method is used when a more-precise value of the Resource needs to be obtained. This is more commonly used in the `VariableSerializer`, which handles serializing declared variables in both the [Math Resource (Power Type)](../power_types/math_resource.md) and the [Variable Execute Command (Entity Action Type)](../entity_action_types/variable_execute_command.md), as well as the `/resource get absolute` subcommand.
+On the other hand, the `supplyDoubleValue()` method is used when a more-precise value of the Resource needs to be obtained. This is more commonly used in the `VariableSerializer`, which handles serializing declared variables in both the [Math Resource (Power Type)](../types/power_types/math_resource.md) and the [Variable Execute Command (Entity Action Type)](../types/entity_action_types/variable_execute_command.md), as well as the `/resource get absolute` subcommand.
 
 ## SuppliedLinkedVariableIntPower
 

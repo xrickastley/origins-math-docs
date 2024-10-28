@@ -1,6 +1,6 @@
 # Attribute Linked Resource
 
-[Power Type](../types/power_types.md)
+[Power Type](../power_types.md)
 
 Provides a variable who's value is given by the provided value of the selected [Attribute Value](../data_types/attribute_value.md) from the specified [Attribute](https://minecraft.wiki/w/Attribute).
 

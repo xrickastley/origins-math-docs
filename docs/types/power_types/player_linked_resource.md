@@ -1,6 +1,6 @@
 # Player Linked Resource
 
-[Power Type](../types/power_types.md)
+[Power Type](../power_types.md)
 
 Provides a variable who's value is given by the player's value for the provided property.
 

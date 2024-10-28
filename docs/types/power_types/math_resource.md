@@ -1,6 +1,6 @@
 # Math Resource
 
-[Power Type](../types/power_types.md)
+[Power Type](../power_types.md)
 
 Provides a variable who's value is given by the value of the provided [Expression](../data_types/expression.md).
 

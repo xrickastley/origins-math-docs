@@ -1,6 +1,6 @@
 # Variable Declaration
 
-[Data Type](../types/data_types.md)
+[Data Type](../data_types.md)
 
 An [Object](https://origins.readthedocs.io/en/latest/types/data_types/object/) representing a key-value pair of used names and their associated variables.
 

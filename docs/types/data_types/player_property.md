@@ -1,6 +1,6 @@
 # Player Property
 
-[Data Type](../types/data_types.md)
+[Data Type](../data_types.md)
 
 A [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) used to specify a property of a [Player](https://minecraft.wiki/w/Player).
 
