@@ -5,6 +5,11 @@ Power Types are what grants functionality to your origins! Each power has a type
 ### Regular types
 - [Attribute Linked Resource](./power_types/attribute_linked_resource.md)
 - [Math Resource](./power_types/math_resource.md)
+- [Modifiable Resource](./power_types/modifiable_resource.md)
 - [Player Linked Resource](./power_types/player_linked_resource.md)
 - [Scoreboard Linked Resource](./power_types/scoreboard_linked_resource.md)
 - [Status Effect Linked Resource](./power_types/status_effect_linked_resource.md)
+
+### Modifying types
+- [Modify Resource Minimum](./power_types/modify_resource_minimum.md)
+- [Modify Resource Maximum](./power_types/modify_resource_maximum.md)
