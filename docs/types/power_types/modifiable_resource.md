@@ -9,6 +9,9 @@ Type ID: `origins-math:modifiable_resource`
 !!! note
     This power type provides a variable like the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/), whose minimum and maximum value can be modified through the [Modify Resource Minimum (Power Type)](./modify_resource_minimum.md) and [Modify Resource Maximum (Power Type)](./modify_resource_maximum.md), respectively.
 
+!!! warning
+	A bug in `1.20.1` prevents the `enforce_limits` and `retain_value` from being updated when using [`/reload`](https://minecraft.wiki/w/Commands/reload). To refresh the power, simply exit the world and rejoin. Sorry for any possible inconveniences.
+
 ### Fields
 
 | Field			| Type | Default | Description
