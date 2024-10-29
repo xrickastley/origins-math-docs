@@ -11,5 +11,5 @@ Power Types are what grants functionality to your origins! Each power has a type
 - [Status Effect Linked Resource](./power_types/status_effect_linked_resource.md)
 
 ### Modifying types
-- [Modify Resource Minimum](./power_types/modify_resource_minimum.md)
 - [Modify Resource Maximum](./power_types/modify_resource_maximum.md)
+- [Modify Resource Minimum](./power_types/modify_resource_minimum.md)
