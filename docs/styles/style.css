@@ -5,3 +5,20 @@
 .wy-table-responsive {
     overflow : visible !important;
 }
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: #62f5aa;
+}
+
+.wy-side-nav-search {
+    background-color: #2bd57d;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #2bd57d;
+}
+
+.wy-menu-vertical li a:active {
+    background-color: #2bd57d;
+    cursor: pointer;
+}

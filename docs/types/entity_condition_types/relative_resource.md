@@ -2,7 +2,7 @@
 
 [Entity Condition Type](../entity_condition_types.md)
 
-Compares the value of a power that uses the [Modifiable Resource (Power Type)](./modifiable_resource.md), [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or a power type that has a built-in cooldown (using remaining ticks as the value) over it's current maximum value to the specified relativity.
+Compares the value of a power that uses the [Modifiable Resource (Power Type)](../power_types/modifiable_resource.md), [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or a power type that has a built-in cooldown (using remaining ticks as the value) over it's current maximum value to the specified relativity.
 
 | Field			| Type		| Default		| Description								|
 |---------------|-----------|---------------|-------------------------------------------|
