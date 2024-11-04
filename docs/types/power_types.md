@@ -13,3 +13,4 @@ Power Types are what grants functionality to your origins! Each power has a type
 ### Modifying types
 - [Modify Resource Maximum](./power_types/modify_resource_maximum.md)
 - [Modify Resource Minimum](./power_types/modify_resource_minimum.md)
+- [Modify Simple](./power_types/modify_simple.md)

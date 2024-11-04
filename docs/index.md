@@ -6,7 +6,8 @@ Origins: Math is a Origin addon developed for Fabric. It adds the capability for
 
 Sounds cool? Well, this documentation should contain all the information you need for using the Origins: Math mod.
 
-Modrinth link: [https://modrinth.com/mod/origins-math](https://modrinth.com/mod/origins-math)
+Modrinth link: [https://modrinth.com/mod/origins-math](https://modrinth.com/mod/origins-math)  
+CurseForge link: [https://www.curseforge.com/minecraft/mc-mods/origins-math](https://www.curseforge.com/minecraft/mc-mods/origins-math)  
 
 Origins Mod: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/origins) or [Modrinth](https://modrinth.com/mod/origins)  
 [Origins Documentation](https://origins.readthedocs.io/en/latest/)

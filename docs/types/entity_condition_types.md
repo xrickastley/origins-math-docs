@@ -6,3 +6,4 @@ Entity Condition Types operate on an `Entity`, which also allows access to the w
 - [Compare Resources](./entity_condition_types/compare_resources.md)
 - [Empty Resource](./entity_condition_types/empty_resource.md)
 - [Full Resource](./entity_condition_types/full_resource.md)
+- [Relative Resource](./entity_condition_types/relative_resource.md)
