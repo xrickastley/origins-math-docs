@@ -20,6 +20,8 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 	- `origins-math:standard_divide_total`
 - Added a new command: `/modifier`
 
+<hr>
+
 ## Origins: Math 1.1.0
 ### Additions
 - Added new power types
