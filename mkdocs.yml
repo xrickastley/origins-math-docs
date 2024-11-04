@@ -1,6 +1,7 @@
 site_name: "Origins: Math Documentation"
 nav:
   - Home: index.md
+  - Changelog: changelog.md
   - General Types:
     - Power Types: types/power_types.md
     - Data Types: types/data_types.md
