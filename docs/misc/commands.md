@@ -4,3 +4,4 @@ Commands, also known as console commands, are advanced features activated by typ
 ### List
 
 - [`/resource` (Overwrite)](./commands/resource.md)
+- [`/modifier`](./commands/modifier.md)
