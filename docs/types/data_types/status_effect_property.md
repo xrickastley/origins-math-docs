@@ -1,3 +1,7 @@
+---
+title: Status Effect Property (Data Type)
+---
+
 # Status Effect Property
 
 [Data Type](../data_types.md)

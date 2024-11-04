@@ -1,3 +1,7 @@
+---
+title: Variable Declaration (Data Type)
+---
+
 # Variable Declaration
 
 [Data Type](../data_types.md)

@@ -1,3 +1,7 @@
+---
+title: Attribute Value (Data Type)
+---
+
 # Attribute Value
 
 [Data Type](../data_types.md)

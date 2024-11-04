@@ -1,3 +1,7 @@
+---
+title: Modify Simple (Power Type)
+---
+
 # Modify Simple
 
 [Power Type](../power_types.md)

@@ -1,3 +1,7 @@
+---
+title: Modify Resource Maximum (Power Type)
+---
+
 # Modify Resource Maximum
 
 [Power Type](../power_types.md)

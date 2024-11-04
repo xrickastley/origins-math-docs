@@ -1,3 +1,7 @@
+---
+title: Math Resource (Power Type)
+---
+
 # Math Resource
 
 [Power Type](../power_types.md)

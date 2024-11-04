@@ -1,3 +1,7 @@
+---
+title: Modifiable Resource (Power Type)
+---
+
 # Modifiable Resource
 
 [Power Type](../power_types.md)

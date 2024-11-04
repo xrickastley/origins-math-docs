@@ -1,3 +1,7 @@
+---
+title: Expression (Data Type)
+---
+
 # Expression
 
 [Data Type](../data_types.md)

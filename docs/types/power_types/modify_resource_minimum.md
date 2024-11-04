@@ -1,3 +1,7 @@
+---
+title: Modify Resource Minimum (Power Type)
+---
+
 # Modify Resource Minimum
 
 [Power Type](../power_types.md)

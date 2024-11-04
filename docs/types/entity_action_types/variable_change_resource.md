@@ -1,3 +1,7 @@
+---
+title: Variable Change Resource (Entity Action Type)
+---
+
 # Variable Change Resource
 
 [Entity Action Type](../entity_action_types.md)

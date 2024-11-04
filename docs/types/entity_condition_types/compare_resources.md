@@ -1,3 +1,7 @@
+---
+title: Compare Resources (Entity Condition Type)
+---
+
 # Compare Resources
 
 [Entity Condition Type](../entity_condition_types.md)

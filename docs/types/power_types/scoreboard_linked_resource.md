@@ -1,3 +1,7 @@
+---
+title: Scoreboard Linked Resource (Power Type)
+---
+
 # Scoreboard Linked Resource
 
 [Power Type](../power_types.md)

@@ -1,3 +1,7 @@
+---
+title: Player Linked Resource (Power Type)
+---
+
 # Player Linked Resource
 
 [Power Type](../power_types.md)

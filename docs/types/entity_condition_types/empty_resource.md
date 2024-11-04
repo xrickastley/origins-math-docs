@@ -1,3 +1,7 @@
+---
+title: Empty Resource (Entity Condition Type)
+---
+
 # Empty Resource
 
 [Entity Condition Type](../entity_condition_types.md)

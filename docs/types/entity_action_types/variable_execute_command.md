@@ -1,3 +1,7 @@
+---
+title: Variable Execute Command (Entity Action Type)
+---
+
 # Variable Execute Command
 
 [Entity Action Type](../entity_action_types.md)

@@ -1,3 +1,7 @@
+---
+title: Full Resource (Entity Condition Type)
+---
+
 # Full Resource
 
 [Entity Condition Type](../entity_condition_types.md)

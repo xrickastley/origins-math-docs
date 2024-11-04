@@ -1,3 +1,7 @@
+---
+title: Relative Resource (Entity Condition Type)
+---
+
 # Relative Resource
 
 [Entity Condition Type](../entity_condition_types.md)

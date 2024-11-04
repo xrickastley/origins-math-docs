@@ -1,3 +1,7 @@
+---
+title: Attribute Linked Resource (Power Type)
+---
+
 # Attribute Linked Resource
 
 [Power Type](../power_types.md)

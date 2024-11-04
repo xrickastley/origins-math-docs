@@ -1,3 +1,7 @@
+---
+title: Player Property (Data Type)
+---
+
 # Player Property
 
 [Data Type](../data_types.md)

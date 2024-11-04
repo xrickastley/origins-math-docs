@@ -1,3 +1,7 @@
+---
+title: Status Effect Linked Resource (Power Type)
+---
+
 # Status Effect Linked Resource
 
 [Power Type](../power_types.md)
