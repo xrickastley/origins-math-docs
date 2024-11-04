@@ -1,5 +1,7 @@
 # Resource-backed fields
 
+### Introduction
+
 When you start up Minecraft with logs enabled, you might've seen the following in the logs.
 
 ```
@@ -8,6 +10,8 @@ When you start up Minecraft with logs enabled, you might've seen the following i
 ```
 
 This is what Origins: Math does behind-the-scenes for you to be able to use Resources in [Entity Action Types](../types/entity_action_types.md) or [Entity Condition Types](../types/entity_condition_types.md) directly!
+
+### Creation
 
 For every [Entity Action Type](../types/entity_action_types.md) or [Entity Condition Type](../types/entity_condition_types.md) that gets added, Origins: Math can create a modified version of it that allows you to use Resources directly into [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) or [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) values. 
 
@@ -26,6 +30,8 @@ However, this little caveat may cause an issue when Origin addons add power type
 	- ex. `origins:delay` to `origins-math:delay`
 - If the type is not from Apoli or Origins, the resulting ResourceBacked factory will be `origins-math:<modid>/<type>`
 	- ex. `eggolib:change_health` to `origins-math:eggolib/change_health`
+
+### Example usage
 
 A ResourceBacked factory's [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) and [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) fields can take the value of Resources as it's value. For example, let's take a look at `origins:heal` and it's ResourceBacked version: `origins-math:heal`.
 
@@ -71,7 +77,7 @@ The example above will heal the entity for `2` hearts. Normally, this alone can 
 }
 ```
 
-While this isn't a bad solution to the problem, it's quite large and can be hard to maintain as you go on. Additionally, our solution would be very large for a power that just *heals* based on the value of a Resource, how longer would it be if our power is more complex?
+While this isn't a bad solution to the problem, it's quite large and can be hard to maintain as you go on. Additionally, if our solution is already very large for a power that just *heals* based on the value of a Resource, how much longer would it be if our power is more complex?
 
 This is where the ResourceBacked version for `origins:heal` comes in. Instead of a big [If-Else List](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/) chain, you can simply use the Resource as the value for the healing directly!
 
