@@ -136,4 +136,4 @@ Lets take our previous example and say that the value of the resource sub-power 
 
 When the player isn't shifting, the value of the resource is `75`, and when the player is shifting, the value of the resource is `140`. Even though it's current value is clearly hitting the maximum values, the `max_action` will **not** be executed. It will only be executed if the resources' internal value reaches the current maximum again. Do note that setting the resource to `140` (while shifting) will still not execute `max_action`, since it's value effectively stayed the same. 
 
-Now, if the player isn't shifting, and the value of the resource is set to `75`, `max_action` is executed, despite
+Now, if the player isn't shifting, and the value of the resource is set to `75`, `max_action` is executed since it's internal value changes to `75`. (`75` is bound by minimum and maximum, therefore it is set)
