@@ -20,10 +20,10 @@ Type ID: `origins-math:compare_resources`
 ### Examples
 ```json
 "condition": {
-    "type": "origins-math:compare_resource",
+    "type": "origins-math:compare_resources",
     "left_resource": "example:a_simple_resource",
     "comparison": ">=",
-    "right_resource": "example:another_simple_resource",
+    "right_resource": "example:another_simple_resource"
 }
 ```
 This example will check if the player's `example:a_simple_resource` resource has a greater or equal value to  `example:another_simple_resource` resource.
