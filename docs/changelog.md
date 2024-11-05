@@ -7,6 +7,12 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 !!! tip
 	If a type doesn't exist on this page, that means that it has existed since **Origins: Math 1.0.0**! This means that any version of **Origins: Math** should have that type.
 
+## Origins: Math 1.1.2
+### Fixes
+- Fixed `origins-math:modifiable_resource` executing it's `min_action`/`max_action` only when it's original maximum or minimum is reached.
+
+<hr>
+
 ## Origins: Math 1.1.1
 ### Additions
 - Added new power types
