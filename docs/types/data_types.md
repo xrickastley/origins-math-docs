@@ -8,6 +8,7 @@ Data types are used everywhere in the JSON files. Every field in a JSON has to h
 ### Origins: Math-specific
 
 - [Attribute Value](./data_types/attribute_value.md)
+- [Biome Property](./data_types/biome_property.md)
 - [Expression](./data_types/expression.md)
 - [Player Property](./data_types/player_property.md)
 - [Status Effect Property](./data_types/status_effect_property.md)
