@@ -14,7 +14,7 @@ Type ID: `origins-math:status_effect_linked_resource`
 | Field    | Type | Default    | Description |
 |----------|------|------------|-------------|
 |`effect`  |[Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/)| | The ID of the Status Effect that this power will base it's value from.|
-|`property`|[Status Effect Property](../data_types/status_effect_property.md)| | The specific value of the Status Effect this power will take as it's value. |
+|`property`|[Status Effect Property](../data_types/status_effect_property.md)| | The specific property of the Status Effect that this power will take as it's value. |
 
 ### Examples
 ```json

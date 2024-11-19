@@ -13,7 +13,7 @@ Type ID: `origins-math:player_linked_resource`
 ### Fields
 | Field   | Type | Default    | Description |
 |---------|------|------------|-------------|
-|`property`|[Player Property](../data_types/player_property.md)| | The specific value of the player this power will take as it's value. |
+|`property`|[Player Property](../data_types/player_property.md)| | The specific property of the player that this power will take as it's value. |
 
 ### Examples
 ```json
