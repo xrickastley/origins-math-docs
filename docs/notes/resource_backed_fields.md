@@ -102,7 +102,7 @@ When an [Entity Action Type](../types/entity_action_types.md) or [Entity Conditi
 
 To further clarify the explanation, here is an example:
 
-```jsonc
+```json
 {
 	"type": "origins:multiple",
 
