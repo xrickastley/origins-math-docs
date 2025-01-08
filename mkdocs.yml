@@ -10,7 +10,7 @@ nav:
   - Condition Types:
     - Entity Condition Types: types/entity_condition_types.md
   - Miscellaneous:
-    - Commannds: misc/commands.md
+    - Commands: misc/commands.md
   - Extra Notes:
     - Resource-backed fields: notes/resource_backed_fields.md
   - Add-On Guides:
