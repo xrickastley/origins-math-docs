@@ -89,3 +89,51 @@ This is where the ResourceBacked version for `origins:heal` comes in. Instead of
 ```
 
 The example above will heal the entity using the value of the `example:healing_gauge` Resource, removing the need for a big [If-Else List](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/) chain.
+
+### Caveats and Limitations
+
+While this is a great system, there is a certain limitations to this feature that **Origins: Math** has no current workaround for.
+
+#### "Invalid" resource values
+
+Ever wondered why the reason why you can only do this with [Entity Action Types](../types/entity_action_types.md) or [Entity Condition Types](../types/entity_condition_types.md)? Well, it's because of the way Origins, or more specifically, Apoli, resolves these kinds of objects.
+
+When an [Entity Action Type](../types/entity_action_types.md) or [Entity Condition Type](../types/entity_condition_types.md) is evaluated, the entity is being evaluated on is passed to the action or condition before it is evaluated on them. **Origins: Math** takes advantage of this system by using the entity being passed as the resource target, meaning that if a resource is supplied as a "variable" in an Entity Action Type or Entity Conditition Type, the value of that resource for the entity passed will be used.
+
+To further clarify the explanation, here is an example:
+
+```jsonc
+{
+	"type": "origins:multiple",
+
+	// ...
+
+	"resource": {
+		"type": "origins:resource",
+		"min": 1,
+		"max": 10
+	},
+
+	"handler": {
+		"type": "origins:active_self",
+		// ...
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 8,
+			"shape": "sphere",
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:damage",
+					"damage_type": "minecraft:player_attack",
+					"amount": "*:*_resource"
+				}
+			}
+		}
+	}
+}
+```
+
+In the example above, instead of the actor's (the power holder) `resource` subpower being used as the value for the damage, the target's (entities in the area of effect) `resource` subpower is being used as the value for the damage instead, and since they don't have the requested resource power, `0` is being used instead.
+
+Why is the target's `resource` subpower being used? This is because they are the the "entity being evaluated upon". The damage is being dealt to them, meaning that they are the entity being evaluated upon, which is the same entity **Origins: Math** uses for resolving resource values, resulting in an unexpected `0`.
