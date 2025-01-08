@@ -15,7 +15,7 @@ Type ID: `origins-math:current_biome_linked_resource`
 ```json
 {
 	"type": "origins-math:current_biome_linked_resource",
-	"property": "FOOD_LEVEL"
+	"property": "TEMPERATURE"
 }
 ```
 This example will use the power holders' current biome's temperature as it's value.
