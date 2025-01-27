@@ -12,7 +12,7 @@ This is a modified version of `origins:execute_command` that allows you to "inje
 
 To signify a variable inside the `command` string, the variable name must either be prepended with `$:` or follow the JavaScript [String interpolation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#string_interpolation) syntax. You may use both methods to signify variables in a single command string.
 
-The values for variables are calculated when the command is executed. This allows for changes in variable values to be reflected in the executed command.
+The values for variables are calculated when the command is executed. This allows changes in variable values to be reflected in the executed command.
 
 Type ID: `origins-math:variable_execute_command`
 

@@ -90,6 +90,16 @@ This is where the ResourceBacked version for `origins:heal` comes in. Instead of
 
 The example above will heal the entity using the value of the `example:healing_gauge` Resource, removing the need for a big [If-Else List](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/) chain.
 
+### Bi-entity and Item contexts
+
+In **Origins: Math v1.2.0**, Resource-Backed fields were added to both the Bi-entity and Item Actions and Conditions. This new addition highlights a limitation in **Origins: Math**, specifically, ["Invalid" resource values](#invalid-resource-values).
+
+For entities, the Resource is calculated based on the entity the action is being executed on. What about Bi-entities, or Items?
+
+In a Bi-entity context (Bi-entity Actions and Conditions), the Resource is calculated based on the **actor** of the Bi-entity context. This means that you can use [Invert (Bi-entity Action Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/invert/) to invert the entity that the Resource will be calculated from, as that action type inverts the actor and target.
+
+In an Item context (Item Actions and Conditions), the Resource is calculated based on the **holder** of the `ItemStack`, obtained through Apoli's `EntityLinkedItemStack` addition, the same addition being used for [Holder Action (Item Action Type)](https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action/).
+
 ### Caveats and Limitations
 
 While this is a great system, there is a certain limitations to this feature that **Origins: Math** has no current workaround for.

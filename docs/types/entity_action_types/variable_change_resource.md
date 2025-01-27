@@ -10,7 +10,7 @@ Changes the value of a power that either uses the Resource power type, or has a 
 
 This is a modified version of `origins:change_resource` that allows you to use an expression with variables as the change value.
 
-The expression is calculated when this [Entity Action Type](../entity_action_types.md) is executed. This allows for changes in variable values to be reflected in the expression.
+The expression is calculated when this [Entity Action Type](../entity_action_types.md) is executed. This allows changes in variable values to be reflected in the expression.
 
 Type ID: `origins-math:variable_change_resource`
 
