@@ -8,7 +8,7 @@ title: Variable Declaration (Data Type)
 
 An [Object](https://origins.readthedocs.io/en/latest/types/data_types/object/) representing a key-value pair of used names and their associated variables.
 
-```jsonc
+```json
 "variables": {
 	"hunger": "origins-math:hunger_linked_resource",
 	"health": "origins-math:health_linked_resource",

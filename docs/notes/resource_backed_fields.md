@@ -92,7 +92,7 @@ The example above will heal the entity using the value of the `example:healing_g
 
 ### Bi-entity and Item contexts
 
-In **Origins: Math v1.2.0**, Resource-Backed fields were added to both the Bi-entity and Item Actions and Conditions. This new addition highlights a limitation in **Origins: Math**, specifically, ["Invalid" resource values](#invalid-resource-values).
+In **Origins: Math v1.2.0**, Resource-Backed fields were added to both the Bi-entity and Item Actions and Conditions. This new addition highlights a limitation in **Origins: Math**, specifically, ["Invalid" resource values](#invalid_resource_values).
 
 For entities, the Resource is calculated based on the entity the action is being executed on. What about Bi-entities, or Items?
 
@@ -106,9 +106,9 @@ While this is a great system, there is a certain limitations to this feature tha
 
 #### "Invalid" resource values
 
-Ever wondered why the reason why you can only do this with [Entity Action Types](../types/entity_action_types.md) or [Entity Condition Types](../types/entity_condition_types.md)? Well, it's because of the way Origins, or more specifically, Apoli, resolves these kinds of objects.
+Ever wondered why the reason why you can only do this with a specific action or condition type? Well, it's because of the way Origins, or more specifically, Apoli, resolves these kinds of objects.
 
-When an [Entity Action Type](../types/entity_action_types.md) or [Entity Condition Type](../types/entity_condition_types.md) is evaluated, the entity is being evaluated on is passed to the action or condition before it is evaluated on them. **Origins: Math** takes advantage of this system by using the entity being passed as the resource target, meaning that if a resource is supplied as a "variable" in an Entity Action Type or Entity Conditition Type, the value of that resource for the entity passed will be used.
+When an action or condition is evaluated, the value, related to the action or condition (an `Entity` for Entity Actions/Conditions, a `Pair<Entity, Entity>` for Bi-entities, etc.), being evaluated on, is passed to the action or condition before it is evaluated on them. **Origins: Math** takes advantage of this system by using the value being passed as the resource target and getting an `Entity` from it, meaning that if a resource is supplied as a "variable" in an Entity Action Type or Entity Conditition Type, the value of that resource for the entity got from the value will be used.
 
 To further clarify the explanation, here is an example:
 
@@ -147,3 +147,36 @@ To further clarify the explanation, here is an example:
 In the example above, instead of the actor's (the power holder) `resource` subpower being used as the value for the damage, the target's (entities in the area of effect) `resource` subpower is being used as the value for the damage instead, and since they don't have the requested resource power, `0` is being used instead.
 
 Why is the target's `resource` subpower being used? This is because they are the the "entity being evaluated upon". The damage is being dealt to them, meaning that they are the entity being evaluated upon, which is the same entity **Origins: Math** uses for resolving resource values, resulting in an unexpected `0`.
+
+Since **Origins: Math v1.2.0**, we can use Resource-backed fields in Bi-entity and Item contexts! For the example above, we can use the [Damage (Bi-entity Action Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage/) to deal damage to the target while using Resource values from the actor.
+
+```json
+{
+	"type": "origins:multiple",
+
+	// ...
+
+	"resource": {
+		"type": "origins:resource",
+		"min": 1,
+		"max": 10
+	},
+
+	"handler": {
+		"type": "origins:active_self",
+		// ...
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 8,
+			"shape": "sphere",
+			"bientity_action": {
+				"type": "origins:damage",
+				"damage_type": "minecraft:player_attack",
+				"amount": "*:*_resource"
+			}
+		}
+	}
+}
+```
+
+Here, it will use the actor's `resource` subpower as the amount of damage dealt to the target, since Resource-backed fields in a **Bi-entity** context are **always** executed on the actor.
