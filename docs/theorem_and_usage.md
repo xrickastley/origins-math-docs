@@ -20,6 +20,11 @@ Let us go back to our previous example. If you wanted to multiply the value by `
 
 The neat thing about integers and floats is that integers can actually be written as floats, with a fractional portion of `.0`. This allows integers to be represented as floats even though they don't contain any fractional portion!
 
+![](./img/resource.gif)
+
+!!! tip
+	You can see the "absolute" (**Origins: Math** pseudo-decimal value) of a resource using the [`/resource get absolute`](./misc/commands/resource.md) command!
+
 ## Variables: The pride of Origins: Math
 
 In **Origins: Math**, you may have seen Resources being used as values to actions or conditions directly! This is one of the **core** features of **Origins: Math**, and is probably one of the reasons why you've decided to download this mod. If you didn't know this, well, now you do! This resource is referred to as a "variable", since it serves as a variable to that action or condition.
