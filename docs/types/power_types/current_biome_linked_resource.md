@@ -1,3 +1,7 @@
+---
+title: Current Biome Linked Resource (Power Type)
+---
+
 # Current Biome Linked Resource
 
 [Power Type](../power_types.md)
