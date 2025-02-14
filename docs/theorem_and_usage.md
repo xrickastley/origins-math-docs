@@ -12,7 +12,7 @@ What if the player's holding a sword? Well, now the attribute has a value of `1.
 
 ## Keeping compatibility: Pseudo-decimal values
 
-Remember when I said that Resources in **Origins** have an Integer data type? How exactly can we have a decimal value if the value is supposed to be an Integer in the first place? We do so by **not storing** the value in the first place! If you haven't noticed by now, every Resource in **Origins: Math** that can possibly have a decimal are not editable, but rather, get their values direct from the source!
+Remember when we said that Resources in **Origins** have an Integer data type? How exactly can we have a decimal value if the value is supposed to be an Integer in the first place? We do so by **not storing** the value in the first place! If you haven't noticed by now, every Resource in **Origins: Math** that can possibly have a decimal are not editable, but rather, get their values direct from the source!
 
 This method allows us to get both integer **and** decimal values: using the integer values for keeping compatibility with **Origins**' Resources and decimal values for precision within **Origins: Math** Resources. **Origins: Math** can use the full decimal value of the Resource while still keeping compatibility with **Origins** by using the [truncated](https://en.wikipedia.org/wiki/Truncation) value of the Resource, making it an Integer and satisfying the required datatype that **Origins** wants! This is also why some actions or conditions have a warning indicating that "...can be internally stored as a Float, but normal Origin Resource powers have to be stored as an Integer" or something close to it.
 

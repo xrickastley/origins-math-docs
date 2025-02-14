@@ -23,7 +23,7 @@ On the other hand, the `supplyDoubleValue()` method is used when a more-precise 
 
 A `SuppliedLinkedVariableIntPower` is an abstract extension of the `LinkedVariableIntPower` class. What makes it different is it's capability to easily supply various properties of a given object.
 
-The type `T` would be the object that the given `Supplier` would be supplying for the `Consumer` to consume. It'll make more sense when I give an example, so hang on tight in there!
+The type `T` would be the object that the given `Supplier` would be supplying for the `Consumer` to consume. It'll make more sense when we give an example, so hang on tight in there!
 
 Say we have a bunch of properties of a `PlayerEntity` that we would want to get, such as their hunger, saturation, relative health, breathing, how long they've been on fire, etc. We could use an `if-else` to check for each property the power would want, but that would be harder to read the more properties you want to have. This is where the `SuppliedLinkedVariableIntPower` comes into play.
 
