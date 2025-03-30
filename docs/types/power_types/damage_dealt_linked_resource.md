@@ -6,7 +6,9 @@ title: Damage Dealt Linked Resource (Power Type)
 
 [Power Type](../power_types.md)
 
-Provides a variable who's value is given by the most recent amount of damage dealt to another entity. The amount of damage recorded by this resource is the **final** amount of damage dealt, meaning that all possible modifiers such as Protection, Resistance, Modifiers, and etc. have all been accounted for.
+Provides a variable who's value is given by the most recent amount of damage dealt to another entity.
+
+The amount of damage recorded by this resource is the **final** amount of damage dealt, meaning that all possible modifiers such as Protection, Resistance, Modifiers, and etc. have all been accounted for.
 
 Type ID: `origins-math:damage_dealt_linked_resource`
 
