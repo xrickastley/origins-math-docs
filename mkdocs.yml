@@ -1,6 +1,7 @@
 site_name: "Origins: Math Documentation"
 nav:
   - Home: index.md
+  - Getting Started: getting_started.md
   - Changelog: changelog.md
   - Theorem and Usage: theorem_and_usage.md
   - General Types:

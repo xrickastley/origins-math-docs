@@ -4,7 +4,7 @@ Tired of dealing with Attribute Modifiers? Wished you could use mathematical cal
 
 Origins: Math is a Origin addon developed for Fabric. It adds the capability for you to use math for your Origin powers, the capability to bridge various Minecraft values as Origin Resource powers, as well as the capability for you to use Resources as Number values, DIRECTLY! 
 
-Sounds cool? Well, this documentation should contain all the information you need for using the Origins: Math mod.
+Sounds cool? Well, this documentation should contain all the information you need for using the Origins: Math mod. To get started immediately, you can click [here](./getting_started.md)!
 
 Modrinth link: [https://modrinth.com/mod/origins-math](https://modrinth.com/mod/origins-math)  
 CurseForge link: [https://www.curseforge.com/minecraft/mc-mods/origins-math](https://www.curseforge.com/minecraft/mc-mods/origins-math)  
