@@ -12,7 +12,7 @@ A [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) us
     The listed values are ordered based on the order of priority; with `add_base_early` being applied before the other modifiers and `set_total` being applied last.
 
 !!! warning
-	This command is originally an Origins/Apoli command, but has been modified by **Origins: Math** to add extra functionality to it. You can find the additions created by **Origins: Math** along with the old values below. 
+	This command is originally an Origins/Apoli data type, but has been modified by **Origins: Math** to add extra functionality to it. You can find the additions created by **Origins: Math** along with the old values below. 
 
 !!! tip
 	For any modifiers with the `apoli` namespace, you may omit it when you type in the value. For example, `apoli:add_base_early` can also be typed as `add_base_early`.
