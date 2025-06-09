@@ -18,6 +18,8 @@ nav:
     - Resource-backed fields: notes/resource_backed_fields.md
   - Add-On Guides:
     - Creating Resource bridges: addon/creating_resource_bridges.md
+  - Experiments:
+    - Extended Compatibility through ASM: experiments/extended_compatibility_through_asm.md
 
 theme: readthedocs
 markdown_extensions:
