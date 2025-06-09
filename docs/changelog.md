@@ -7,6 +7,23 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 !!! tip
 	If a type doesn't exist on this page, that means that it has existed since **Origins: Math 1.0.0**! This means that any version of **Origins: Math** should have that type.
 
+## Origins: Math 1.4.0-alpha
+This Origins: Math version adds an alpha experiment: Extended Compatibility through ASM.
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
+
+## Origins: Math 1.3.1
+### Fixes
+- Fixed /resource not working
+
+### Fixes
+- Properly registered previously added Bi-entity action types
+
+<hr>
+
 ## Origins: Math 1.3.0
 ### Fixes
 - Properly registered previously added Bi-entity action types
@@ -17,6 +34,8 @@ If a power, action or condition type doesn't exist for you, make sure that your 
   - `origins-math:damage_taken_linked_resource`
   - `origins-math:healing_linked_resource`
 
+<hr>
+
 ## Origins: Math 1.2.0
 ### Fixes
 - Properly crashes when an invalid resource is provided ([#1](https://github.com/xrickastley/origins-math/issues/1))
@@ -24,7 +43,7 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 ### Additions
 - Added a new Bi-entity Action Type
   - `origins-math:variable_execute_command`
-- Added new [Resource Backed Injectors](https://origins-math.readthedocs.io/en/latest/notes/resource_backed_fields/)
+- Added new [Resource Backed Injectors](./notes/resource_backed_fields/)
   - Bi-entity Action
   - Bi-entity Condition
   - Item Action
@@ -63,7 +82,7 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 - Added new entity conditions
 	- `origins-math:full_resource`
 	- `origins-math:empty_resource`
-- Added new properties to [Player Property](https://origins-math.readthedocs.io/en/latest/types/data_types/player_property/)
+- Added new properties to [Player Property](./types/data_types/player_property/)
 	- `EXP_LEVEL`
 	- `EXP_POINTS`
 	- `FALL_DISTANCE`
