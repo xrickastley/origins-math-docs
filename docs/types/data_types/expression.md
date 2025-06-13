@@ -53,8 +53,8 @@ A [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) re
 | Random from given list					| `rList()`		| `rList(a, b, ..., z)`	| Returns a random number from the provided list of numbers `a, b, ..., z`, with equal probability for all numbers in the list.
 
 ### Random generators
-| Name		      							| Function	| Syntax        		| Description   
-|-------------------------------------------|-----------|-----------------------|---------------
+| Name		      							| Function	| Description   
+|-------------------------------------------|-----------|---------------------------------------
 | Random integer							| `[Int]`	| Returns a random integer between `-2^31` and `2^31 - 1`, inclusive, with equal probability for all numbers in the specified interval.
 | Random bounded integer					| `[IntX]`	| Returns a random integer between `-(10^X)` and `10^X`, inclusive, with equal probability for all numbers in the specified interval.
 | Random natural number	(incl `0`)			| `[nat]`	| Returns a random integer between `0` and `2^31 - 1`, inclusive, with equal probability for all numbers in the specified interval.
