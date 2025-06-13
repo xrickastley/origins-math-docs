@@ -50,7 +50,7 @@ A [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) re
 | Random uniform continuous distribution	| `rUni()`		| `rUni(a, b)`			| Returns a random real number between `a` and `b`, inclusive, with equal probability for all numbers in the interval `[a, b]`.
 | Random uniform discrete distribution		| `rUnid()`		| `rUnid(a, b)`			| Returns a random integer between `a` and `b`, inclusive, with equal probability for all numbers in the specified interval.
 | Normal (Gaussian) continuous distribution	| `rNor()`		| `rNor(μ, σ)`			| Returns a real number drawn from `N(μ, σ)`; values are clustered around `m` with their spread determined by `s`.
-| Random from given list					| `rList()`		| `rNor(a, b, ..., z)`	| Returns a random number from the provided list of numbers `a, b, ..., z`, with equal probability for all numbers in the list.
+| Random from given list					| `rList()`		| `rList(a, b, ..., z)`	| Returns a random number from the provided list of numbers `a, b, ..., z`, with equal probability for all numbers in the list.
 
 ### Random generators
 | Name		      							| Function	| Syntax        		| Description   
