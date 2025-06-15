@@ -17,7 +17,8 @@ nav:
   - Extra Notes:
     - Resource-backed fields: notes/resource_backed_fields.md
   - Add-On Guides:
-    - Creating Resource bridges: addon/creating_resource_bridges.md
+    - Creating Resource value bridges: addon/creating_resource_value_bridges.md
+    - Value Providers API: addon/value_providers_api.md
   - Experiments:
     - Extended Compatibility through ASM: experiments/extended_compatibility_through_asm.md
 

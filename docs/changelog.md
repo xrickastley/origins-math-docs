@@ -43,7 +43,7 @@ This Origins: Math version adds an alpha experiment: Extended Compatibility thro
 ### Additions
 - Added a new Bi-entity Action Type
   - `origins-math:variable_execute_command`
-- Added new [Resource Backed Injectors](./notes/resource_backed_fields/)
+- Added new [Resource Backed Injectors](./notes/resource_backed_fields.md)
   - Bi-entity Action
   - Bi-entity Condition
   - Item Action
@@ -82,7 +82,7 @@ This Origins: Math version adds an alpha experiment: Extended Compatibility thro
 - Added new entity conditions
 	- `origins-math:full_resource`
 	- `origins-math:empty_resource`
-- Added new properties to [Player Property](./types/data_types/player_property/)
+- Added new properties to [Player Property](./types/data_types/player_property.md)
 	- `EXP_LEVEL`
 	- `EXP_POINTS`
 	- `FALL_DISTANCE`
