@@ -7,6 +7,48 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 !!! tip
 	If a type doesn't exist on this page, that means that it has existed since **Origins: Math 1.0.0**! This means that any version of **Origins: Math** should have that type.
 
+
+## Origins: Math 1.5.0
+### Additions
+- Added new power types
+	- `origins-math:attribute_like_resource`
+	- `origins-math:living_entity_linked_resource`
+	- `origins-math:modify_attribute_like_resource`
+	- `origins-math:nbt_linked_resource`
+- Added new entity action types
+	- `origins-math:change_resource`
+- Added new bi-entity action types
+	- `origins-math:copy_resource_value`
+- Added optional [YetAnotherConfigLib](https://modrinth.com/mod/yacl) dependency for the config menu.
+- Added `/resource change absolute` command.
+
+### Changes
+- Allowed alpha experiments to be toggleable.
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
+
+## Origins: Math 1.4.2-alpha
+### Fixes
+- Fixes `origins-math:status_effect_linked_resource`'s `AMPLIFIER` property from having a value of `0` even when the effect in question is not applied to the entity.
+### Changes
+- Origins: Math is now more strict when using Resource Backed fields on Resource powers that don't exist.
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
+
+## Origins: Math 1.4.1-alpha
+Adds a hotfix for the Alpha Experiment: [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
+
 ## Origins: Math 1.4.0-alpha
 This Origins: Math version adds an alpha experiment: Extended Compatibility through ASM.
 
@@ -30,9 +72,9 @@ This Origins: Math version adds an alpha experiment: Extended Compatibility thro
 
 ### Additions
 - Added new power types
-  - `origins-math:damage_dealt_linked_resource`
-  - `origins-math:damage_taken_linked_resource`
-  - `origins-math:healing_linked_resource`
+	- `origins-math:damage_dealt_linked_resource`
+	- `origins-math:damage_taken_linked_resource`
+	- `origins-math:healing_linked_resource`
 
 <hr>
 
@@ -42,12 +84,12 @@ This Origins: Math version adds an alpha experiment: Extended Compatibility thro
 
 ### Additions
 - Added a new Bi-entity Action Type
-  - `origins-math:variable_execute_command`
+	- `origins-math:variable_execute_command`
 - Added new [Resource Backed Injectors](./notes/resource_backed_fields.md)
-  - Bi-entity Action
-  - Bi-entity Condition
-  - Item Action
-  - Item Condition
+	- Bi-entity Action
+	- Bi-entity Condition
+	- Item Action
+	- Item Condition
 
 <hr>
 

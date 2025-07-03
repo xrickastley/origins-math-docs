@@ -15,3 +15,16 @@ Fetch the absolute value of a (cooldown or resource) power from the specified ta
 	* (e.g: `@a[limit = 1]`, `@p`, `_xRickAstley`, `b1b981b6-4081-4abe-afd8-e79269c6a339`)
 * `<power>` being the namespace and ID of a power
 	* (e.g: `origins:arcane_skin` (`data/origins/powers/arcane_skin.json`))
+
+
+
+```mcfunction
+resource change absolute <target> <power>
+```
+
+Changes the absolute value of a (cooldown or resource) power from the specified target. This adds the provided absolute value to the power's true value as a [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) instead of an [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/).
+
+* `<target>` being a target selector, can only select one entity at a time
+	* (e.g: `@a[limit = 1]`, `@p`, `_xRickAstley`, `b1b981b6-4081-4abe-afd8-e79269c6a339`)
+* `<power>` being the namespace and ID of a power
+	* (e.g: `origins:arcane_skin` (`data/origins/powers/arcane_skin.json`))

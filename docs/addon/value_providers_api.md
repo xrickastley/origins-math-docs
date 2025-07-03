@@ -7,7 +7,7 @@ Since Origins: Math `v1.4.2-alpha`, resource values are now queried through the 
 
 ## Registering a Value Provider
 
-To register a Value Provider, you can use the [`ValueProviders.registerProvider`](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/util/ValueProviders.java#L35) method.
+To register a Value Provider, you can use the [`ValueProviders.registerProvider`](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/util/ValueProviders.java#L37) method.
 
 This method accepts a `Power` class and a `ValueProvider<T>` instance, which handles the various providers for each "value", such as the Power's value, maximum value and minimum value!
 
@@ -24,7 +24,7 @@ Despite this API's name, it also holds Value Modifiers! As their name suggests, 
 
 These Value Modifiers are used in place of "changing resources", such as the [Variable Change Resource (Entity Action Type)](../types/entity_action_types/variable_change_resource.md).
 
-To register a Value Modifier, you can use the [`ValueProviders.registerModifier`](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/util/ValueProviders.java#L43) method.
+To register a Value Modifier, you can use the [`ValueProviders.registerModifier`](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/util/ValueProviders.java#L45) method.
 
 This method accepts a `Power` class and a `ValueModifier<T>` instance, which handles the various modifiers for each "value", such as adding and setting a value!
 
@@ -39,10 +39,10 @@ ValueProviders.registerModifier(
 
 For a specific `Power` instance, the priority of `ValueProvider` A and `ValueProvider` B depend on the `Power`'s class inheritance, where a more "recently" inherited class, i.e. a class deeper in the inheritance chain, will have higher priority.
 
-For instance, say that a `Power` instance is an instance of `MyCustomPower`, where the `MyCustomPower` class follows the given inheritance chain:
+For instance, say that a `Power` instance is an instance of `MyCustomPower`, where the `MyCustomPower` class follows the given inheritance chain, where for `A > B`, `B extends A`:
 
 ```
-MyCustomPower < MyAbstractCustomPower < VariableIntPower < Power
+Power > VariableIntPower > MyAbstractCustomPower > MyCustomPower
 ```
 
 If a `ValueProvider` for both `MyAbstractCustomPower` and `VariableIntPower` exist, the `ValueProvider` for `MyAbstractCustomPower` takes the higher priority, as it is more deeper in the inheritance chain than `VariableIntPower`.

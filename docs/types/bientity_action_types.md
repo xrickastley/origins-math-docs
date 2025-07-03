@@ -6,4 +6,5 @@ As a rule of thumb, the actor is usually the entity that "triggers" the action (
 
 ### List
 
+- [Copy Resource Value](./bientity_action_types/copy_resource_value.md)
 - [Variable Execute Command](./bientity_action_types/variable_execute_command.md)

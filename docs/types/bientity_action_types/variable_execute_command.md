@@ -31,7 +31,7 @@ Type ID: `origins-math:variable_execute_command`
 
 ### Examples
 ```json
-"entity_action": {
+"bientity_action": {
 	"type": "origins-math:variable_execute_command",
 	"command": "/damage @t $:dmgMultiplier minecraft:freeze by @a",
 	"actor_selector": "@a",

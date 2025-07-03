@@ -6,7 +6,7 @@ title: Variable Change Resource (Entity Action Type)
 
 [Entity Action Type](../entity_action_types.md)
 
-Changes the value of a power that either uses the Resource power type, or has a built-in cooldown.
+Changes the value of a power that either uses the [Resource (Power Type)](../power_types/resource.md) or it's extensions, or has a built-in cooldown.
 
 This is a modified version of `origins:change_resource` that allows you to use an expression with variables as the change value.
 
@@ -17,7 +17,7 @@ Type ID: `origins-math:variable_change_resource`
 !!! warning 
 	Some Resource values in this mod can be internally stored as a [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/), but normal Origin Resource powers have to be stored as an [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/).
 	
-	In this [Entity Action Type](../entity_action_types.md), the resulting value of `expression` will have it's decimal counterpart removed, effectively being [truncated](https://en.wikipedia.org/wiki/Truncation) since it will be added to/set as the value of the target resource. However, all Resource values that are used in `expression` have their original values unchanged.
+	In this [Entity Action Type](../entity_action_types.md), the resulting value of `expression` is preserved as much as possible. However, for standard Origin Resource powers, the value is most likely to have it's decimal counterpart removed, effectively being [truncated](https://en.wikipedia.org/wiki/Truncation) since it will be added to/set as the value of the target resource. However, all Resource values that are used in `expression` have their original values unchanged.
 
 ### Fields
 | Field			| Type		| Default		| Description								|

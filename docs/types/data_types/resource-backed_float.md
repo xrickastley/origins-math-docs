@@ -6,7 +6,7 @@ title: Resource-backed Float (Data Type)
 
 [Data Type](../data_types.md)
 
-A [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) or [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) that links to a [Modifiable Resource (Power Type)](../power_types/modifiable_resource.md), [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or a power type that has a built-in cooldown (using remaining ticks as the value).
+A [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) or [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) that links to a [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or it's extensions, or a power type that has a built-in cooldown (using remaining ticks as the value).
 
 ### Examples
 
