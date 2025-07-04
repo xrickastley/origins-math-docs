@@ -24,7 +24,7 @@ Type ID: `origins-math:attribute_like_resource`
 {
 	"type": "origins:multiple",
 
-	"resource": {
+	"energy_resource": {
 		"type": "origins-math:attribute_like_resource",
 		"min": 0,
 		"max": 80
@@ -35,7 +35,7 @@ Type ID: `origins-math:attribute_like_resource`
 		"conditions": {
 			"type": "origins:sneaking"
 		},
-		"resource": "*:*_resource",
+		"resource": "*:*_energy_resource",
 		"modifier": {
 			"operation": "multiply_base_multiplicative",
 			"value": 0.5
@@ -47,7 +47,7 @@ Type ID: `origins-math:attribute_like_resource`
 		"conditions": {
 			"type": "origins:is_rain"
 		},
-		"resource": "*:*_resource",
+		"resource": "*:*_energy_resource",
 		"modifier": {
 			"operation": "multiply_base_multiplicative",
 			"value": 0.25
@@ -55,9 +55,9 @@ Type ID: `origins-math:attribute_like_resource`
 	}
 }
 ```
-This example creates an `resource` [Attribute-like Resource](#attribute-like-resource) sub-power that is modified by both the `sneak_modifier` and the `rain_modifier` [Modify Attribute-like Resource](./modify_attribute_like_resource.md) sub-powers. 
+This example creates a simple "energy system" through the `energy_resource` [Attribute-like Resource](#attribute-like-resource) sub-power, modified by both the `sneak_modifier` and the `rain_modifier` [Modify Attribute-like Resource](./modify_attribute_like_resource.md) sub-powers. 
 
-When the player is sneaking **and** it is **not** raining at the entity's position, **all** added values are multiplied by `1.5`. If it is **also** raining at the entity's position, all added values are multiplied by `1.875` (1.25 × 1.5). If it is **only** raining at the entity's position, all added values are multiplied by `1.25`.
+When the player is sneaking **and** it is **not** raining at the entity's position, **all** received "energy" is multiplied by a factor of `1.5`. If it is **also** raining at the entity's position, all received "energy" is multiplied by a factor of `1.875` (1.25 × 1.5). If it is **only** raining at the entity's position, all received "energy" is multiplied by a factor of `1.25`.
 
 !!! note
 	In order for the modifiers to apply properly, you **must** use the resource changing methods provided by **Origins: Math** like [Change Resource (Entity Action Type)](../entity_action_types/change_resource.md) or the [`/resource change absolute`](../../misc/commands/resource.md) command.
