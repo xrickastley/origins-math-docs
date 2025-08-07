@@ -17,7 +17,7 @@ Type ID: `origins-math:attribute_like_resource`
 |---------|------|------------|-------------|
 |`min`|[Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)| | The minimum value of the resource. |
 |`max`|[Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)| | The maximum value of the resource. |
-|`start_value`|[Biome Property](../data_types/biome_property.md)| | The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` float field. |
+|`start_value`|[Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)| | The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` float field. |
 
 ### Examples
 ```json
