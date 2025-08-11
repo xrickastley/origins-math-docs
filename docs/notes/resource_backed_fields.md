@@ -1,5 +1,15 @@
 # Resource-backed fields
 
+### This is too long! Is there a summary?
+
+Basically, Resource-backed fields is a core feature of **Origins: Math** that allows you to use resources in specified Action and Condition types.
+
+To avoid naming conflicts and to improve readability (it would be very confusing for someone else to see a Resource ID in a normally-`int`/`float` field!), the "Origins: Math" version of an Action/Condition Type would be `origins-math:<type>` for standard types in Apoli/Origins and `origins-math:<modid>/<type>` for types added in by other Origins mods. You **must** use the "Origins: Math" version as using the original version will result in your power file being invalid!
+
+Resources are evaluated based on the entity executing the action, which we will call the "*evaluator*". For Entity Action/Condition Types, the *evaluator* is the entity the action is performed on. For Bi-entity Action/Condition Types, the *evaluator* is the **actor** entity, and for Item Action/Condition Types, the *evaluator* is the **holder** of the `ItemStack`. Do note that if: the *evaluator* does **not exist** (possible in Item Action/Condition Types) or if the *evaluator* does **not have the requested resource**, a value of `0` is supplied instead.
+
+When debugging why some resources don't work, it is **imperative** that you know "**Which entity is the action/condition being evaluated on?**". For more information, you may refer to the ["Invalid" resource values](#invalid-resource-values) section, as this caveat is explained in great detail and should be useful in debugging this issue.
+
 ### Introduction
 
 When you start up Minecraft with logs enabled, you might've seen the following in the logs.
@@ -146,7 +156,7 @@ To further clarify the explanation, here is an example:
 
 In the example above, instead of the actor's (the power holder) `resource` subpower being used as the value for the damage, the target's (entities in the area of effect) `resource` subpower is being used as the value for the damage instead, and since they don't have the requested resource power, `0` is being used instead.
 
-Why is the target's `resource` subpower being used? This is because they are the the "entity being evaluated upon". The damage is being dealt to them, meaning that they are the entity being evaluated upon, which is the same entity **Origins: Math** uses for resolving resource values, resulting in an unexpected `0`.
+Why is the target's `resource` subpower being used? This is because they are the the "entity being evaluated upon", which we will call the "*evaluator*". The damage is being dealt to them, meaning that they are the entity being evaluated upon, which is the same entity **Origins: Math** uses for resolving resource values, resulting in an unexpected `0`.
 
 Since **Origins: Math v1.2.0**, we can use Resource-backed fields in Bi-entity and Item contexts! For the example above, we can use the [Damage (Bi-entity Action Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage/) to deal damage to the target while using Resource values from the actor.
 
@@ -179,4 +189,4 @@ Since **Origins: Math v1.2.0**, we can use Resource-backed fields in Bi-entity a
 }
 ```
 
-Here, it will use the actor's `resource` subpower as the amount of damage dealt to the target, since Resource-backed fields in a **Bi-entity** context are **always** executed on the actor.
+Here, the **actor** serves as the *evaluator*, which results in the actor's `resource` subpower being used as the amount of damage dealt to the target, since Resource-backed fields in a **Bi-entity** context are **always** executed on the actor.
