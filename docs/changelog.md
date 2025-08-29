@@ -7,6 +7,34 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 !!! tip
 	If a type doesn't exist on this page, that means that it has existed since **Origins: Math 1.0.0**! This means that any version of **Origins: Math** should have that type.
 
+## Origins: Math 1.6.0
+### Additions
+- Added new power types
+	- `origins-math:modify_knockback`
+- Added [Custom Hud Renders](./notes/custom_hud_renders.md).
+
+### Changes
+- Added new `modifier` and `modifiers` fields to `origins-math:damage_dealt_linked_resource` and `origins-math:damage_taken_linked_resource`
+- Enabled conditions for the following powers:
+	- `origins-math:damage_dealt_linked_resource`
+	- `origins-math:damage_taken_linked_resource`
+	- `origins-math:healing_linked_resource`
+	- `origins-math:modify_resource_maximum`
+	- `origins-math:modify_resource_minimum`
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
+
+## Origins: Math 1.5.1
+### Fixes
+- Fixed crash when YACL isn't added.
+
+### Origins: Math - Alpha Experiments
+- [Extended Compatibility through ASM](./experiments/extended_compatibility_through_asm.md)
+
+<hr>
 
 ## Origins: Math 1.5.0
 ### Additions
@@ -33,6 +61,7 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 ## Origins: Math 1.4.2-alpha
 ### Fixes
 - Fixes `origins-math:status_effect_linked_resource`'s `AMPLIFIER` property from having a value of `0` even when the effect in question is not applied to the entity.
+
 ### Changes
 - Origins: Math is now more strict when using Resource Backed fields on Resource powers that don't exist.
 
@@ -60,9 +89,6 @@ This Origins: Math version adds an alpha experiment: Extended Compatibility thro
 ## Origins: Math 1.3.1
 ### Fixes
 - Fixed /resource not working
-
-### Fixes
-- Properly registered previously added Bi-entity action types
 
 <hr>
 

@@ -2,7 +2,7 @@
 
 ### This is too long! Is there a summary?
 
-Basically, Resource-backed fields is a core feature of **Origins: Math** that allows you to use resources in specified Action and Condition types.
+Basically, Resource-backed fields are a core feature of **Origins: Math** that allows you to use resources in specified Action and Condition types.
 
 To avoid naming conflicts and to improve readability (it would be very confusing for someone else to see a Resource ID in a normally-`int`/`float` field!), the "Origins: Math" version of an Action/Condition Type would be `origins-math:<type>` for standard types in Apoli/Origins and `origins-math:<modid>/<type>` for types added in by other Origins mods. You **must** use the "Origins: Math" version as using the original version will result in your power file being invalid!
 
@@ -102,7 +102,7 @@ The example above will heal the entity using the value of the `example:healing_g
 
 ### Bi-entity and Item contexts
 
-In **Origins: Math v1.2.0**, Resource-Backed fields were added to both the Bi-entity and Item Actions and Conditions. This new addition highlights a limitation in **Origins: Math**, specifically, ["Invalid" resource values](#invalid_resource_values).
+In **Origins: Math v1.2.0**, Resource-Backed fields were added to both the Bi-entity and Item Actions and Conditions. This new addition highlights a limitation in **Origins: Math**, specifically, ["Invalid" resource values](#invalid-resource-values).
 
 For entities, the Resource is calculated based on the entity the action is being executed on. What about Bi-entities, or Items?
 

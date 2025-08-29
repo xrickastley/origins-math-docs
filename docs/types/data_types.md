@@ -5,6 +5,7 @@ Data types are used everywhere in the JSON files. Every field in a JSON has to h
 ### Resource-backed
 - [Resource-backed Float](./data_types/resource-backed_float.md)
 - [Resource-backed Integer](./data_types/resource-backed_integer.md)
+- [Origins Math Hud Render](./data_types/origins_math_hud_render.md)
 
 ### Origins-specific
 - [Attribute Modifier Operation (Overwrite)](./data_types/attribute_modifier_operation.md)
@@ -14,6 +15,8 @@ Data types are used everywhere in the JSON files. Every field in a JSON has to h
 - [Attribute Value](./data_types/attribute_value.md)
 - [Biome Property](./data_types/biome_property.md)
 - [Expression](./data_types/expression.md)
+- [Living Entity Property](./data_types/living_entity_property.md)
+- [NBT Path](./data_types/nbt_path.md)
 - [Player Property](./data_types/player_property.md)
 - [Status Effect Property](./data_types/status_effect_property.md)
 - [Variable Declaration](./data_types/variable_declaration.md)

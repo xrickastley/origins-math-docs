@@ -59,4 +59,4 @@ In precasting, we take the found `LineNumberNode` and iterate over the instructi
 
 Finally, using the `desc` of the `TypeInsnNode`, we can retrieve what it's trying to be casted into, and return the precasted value accordingly.
 
-You can find the code for this experimental feature [here](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/mixins/SerializableDataInstanceMixin.java#L55).
+You can find the code for this experimental feature [here](https://github.com/xrickastley/origins-math/blob/1.20.2/src/main/java/io/github/xrickastley/originsmath/mixins/SerializableDataInstanceMixin.java#L58).

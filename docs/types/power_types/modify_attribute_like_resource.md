@@ -53,7 +53,7 @@ Type ID: `origins-math:modify_attribute_like_resource`
 	}
 }
 ```
-This example creates an `resource` [Attribute-like Resource](#attribute-like-resource) sub-power that is modified by both the `sneak_modifier` and the `rain_modifier` [Modify Attribute-like Resource](./modify_attribute_like_resource.md) sub-powers. 
+This example creates an `resource` [Attribute-like Resource](./attribute_like_resource.md) sub-power that is modified by both the `sneak_modifier` and the `rain_modifier` [Modify Attribute-like Resource](./modify_attribute_like_resource.md) sub-powers. 
 
 When the player is sneaking **and** it is **not** raining at the entity's position, **all** added values are multiplied by `1.5`. If it is **also** raining at the entity's position, all added values are multiplied by `1.875` (1.25 × 1.5). If it is **only** raining at the entity's position, all added values are multiplied by `1.25`.
 

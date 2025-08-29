@@ -6,7 +6,7 @@ title: Variable Change Resource (Entity Action Type)
 
 [Entity Action Type](../entity_action_types.md)
 
-Changes the value of a power that either uses the [Resource (Power Type)](../power_types/resource.md) or it's extensions, or has a built-in cooldown.
+Changes the value of a power that either uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource.md) or it's extensions, or has a built-in cooldown.
 
 This is a modified version of `origins:change_resource` that allows you to use an expression with variables as the change value.
 

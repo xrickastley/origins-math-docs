@@ -4,6 +4,9 @@ nav:
   - Getting Started: getting_started.md
   - Changelog: changelog.md
   - Theorem and Usage: theorem_and_usage.md
+  - Notes:
+    - Resource-backed fields: notes/resource_backed_fields.md
+    - Custom Hud Renders: notes/custom_hud_renders.md
   - General Types:
     - Power Types: types/power_types.md
     - Data Types: types/data_types.md
@@ -14,8 +17,6 @@ nav:
     - Entity Condition Types: types/entity_condition_types.md
   - Miscellaneous:
     - Commands: misc/commands.md
-  - Extra Notes:
-    - Resource-backed fields: notes/resource_backed_fields.md
   - Add-On Guides:
     - Creating Resource value bridges: addon/creating_resource_value_bridges.md
     - Value Providers API: addon/value_providers_api.md
@@ -25,7 +26,7 @@ nav:
 theme: readthedocs
 markdown_extensions:
   - toc:
-      separator: "_"
+      separator: "-"
   - admonition
 plugins:
   - search

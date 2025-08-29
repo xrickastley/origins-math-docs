@@ -11,7 +11,7 @@ title: Modifiable Resource (Power Type)
 
 	Experimental features are brand new features added to **Origins: Math**, aimed at testing current implementations of highly-requested resource-related features for standard Origins.
 
-	It is highly suggested that you read the [Experimental Feature: Modifiable Resource](#experimental_feature_modifiable_resource) section to get a grasp on how this Power Type works.
+	It is highly suggested that you read the [Experimental Feature: Modifiable Resource](#experimental-feature-modifiable-resource) section to get a grasp on how this Power Type works.
 
 An extension of the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/), provides a variable with an assignable and modifiable minimum and maximum value.
 

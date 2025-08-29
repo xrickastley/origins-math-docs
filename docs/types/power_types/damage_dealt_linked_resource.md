@@ -22,8 +22,10 @@ Type ID: `origins-math:damage_dealt_linked_resource`
 | Field  			| Type | Default    | Description |
 |-------------------|------|------------|-------------|
 |`duration`			|[Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)| |The amount of ticks the damage amount is stored for. |
-|`damage_condition`	|[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/data_types/integer/)|*optional*| If specified, the amount of damage dealt is only set if the damage being dealt fulfills the condition. 	|
+|`damage_condition`	|[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/data_types/integer/)|*optional*| If specified, the amount of damage dealt is only set if the damage being dealt fulfills the condition.|
 |`bientity_action`	|[Bi-entity Action Type](../bientity_action_types.md)|*optional*| If specified, the specified actions will be executed once the amount of damage dealt has been set, with the **'actor'** being the entity **dealing** the damage and the **'target'** being the entity that **receives** the damage.|
+| `modifier`		|[Attribute Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/) | _optional_ | If specified, this modifier will be applied to the damage dealt.|
+| `modifiers`		|[Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Attribute Modifiers](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/) | _optional_ | If specified, these modifiers will be applied to the damage dealt.|
 
 ### Examples
 ```json
