@@ -13,6 +13,7 @@ nav:
   - Action Types:
     - Entity Action Types: types/entity_action_types.md
     - Bi-entity Action Types: types/bientity_action_types.md
+    - Meta Action Types: types/meta_action_types.md
   - Condition Types:
     - Entity Condition Types: types/entity_condition_types.md
   - Miscellaneous:

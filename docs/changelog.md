@@ -7,6 +7,24 @@ If a power, action or condition type doesn't exist for you, make sure that your 
 !!! tip
 	If a type doesn't exist on this page, that means that it has existed since **Origins: Math 1.0.0**! This means that any version of **Origins: Math** should have that type.
 
+## Origins: Math 1.7.0
+### Additions
+- Added new power types
+  - `origins-math:variable_nbt_linked_resource`
+- Added new meta action types
+  - `origins-math:for_range`
+  - `origins-math:while`
+
+### Fixes
+- (1.20.1 only) Added missing mixin
+- Removed debugging loggers ([#6](https://github.com/xrickastley/origins-math/issues/6))
+
+### Changes
+- Enhanced variable definition for the following action types
+  - Variable Execute Command (Entity Action Type)
+  - Variable Execute Command (Bi-entity Action Type)
+  - Variable Nbt-linked Resource (Power Type)
+
 ## Origins: Math 1.6.1
 ### Fixes
 - Modifiers for `origins-math:damage_dealt_linked_resource` and `origins-math:damage_taken_linked_resource` now apply properly.

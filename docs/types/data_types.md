@@ -20,3 +20,4 @@ Data types are used everywhere in the JSON files. Every field in a JSON has to h
 - [Player Property](./data_types/player_property.md)
 - [Status Effect Property](./data_types/status_effect_property.md)
 - [Variable Declaration](./data_types/variable_declaration.md)
+- [Variable String](./data_types/variable_string.md)
